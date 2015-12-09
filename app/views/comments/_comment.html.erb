@@ -1,15 +1,24 @@
 <p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
- 
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+   <table class="table table-striped">
+      <tr>
+        <th>Author</th>
+        <th>Comment</th>
+        <th colspan="1"></th>
+      </tr>
+     
+    
+        <tr>
+          <td><%= comment.commenter %></td>
+          <td><%= comment.body %></td>
+          <td>
+           <%= link_to 'Destroy Comment',  [comment.post, comment],
+               class: "btn btn-danger",
+              
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
-</p>
+        </td>
+      
+   </table>
+
+
+  
