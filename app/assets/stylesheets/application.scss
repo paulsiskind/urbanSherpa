@@ -65,6 +65,17 @@ h1{
 .new{
   color: white;
 }
+.well{
+   background:url('http://calebevans.com/wp-content/uploads/2013/06/mountain_2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+  width: 100%;
+  color: white;
+  opacity: 0.5;
+
+}
 .show{
   background:url('http://calebevans.com/wp-content/uploads/2013/06/mountain_2.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;

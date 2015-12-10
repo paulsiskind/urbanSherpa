@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  get 'signup'  => 'users#new'
+
   root 'welcome#index'
 
   resources :posts do

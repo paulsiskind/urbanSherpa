@@ -35,3 +35,6 @@ errors route
     <%= f.label :bid %><br>
     <%= f.number_field (:bid), class:"form-control" %>
   </p>
+
+  routes
+   get 'users/new'
