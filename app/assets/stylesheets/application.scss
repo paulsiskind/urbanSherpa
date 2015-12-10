@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Iceberg);
+@import url(https://fonts.googleapis.com/css?family=Sirin+Stencil);
+
+
+body{
+  background:url('http://mteverestcafe.com/wp-content/uploads/2010/12/look-at-me.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+  height: 100%;
+
+}
+.front{
+  opacity: 0.5;
+}
+.front p{
+  width: 50%;
+}
+p{
+  font-family: 'Sirin Stencil', cursive;
+  font-size: 20px;
+}
+td{
+  font-family: 'Sirin Stencil', cursive;
+  font-size: 20px;
+
+}
+th{
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 30px;
+}
+
+table{
+  background: #595BFF;
+  opacity: 0.9;
+}
+h1{
+  font-family: 'Iceberg', cursive;
+  font-size: 70px;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.new{
+  color: white;
+}
+.show{
+  background:url('http://calebevans.com/wp-content/uploads/2013/06/mountain_2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+  width: 100%;
+  color: white;
+  opacity: 0.5;
+}
+text_area{
+  background-color: #59FFF4;
+}

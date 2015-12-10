@@ -1,0 +1,37 @@
+<table class="table table-striped">
+      <tr>
+        <th>Title</th>
+        <th>Text</th>
+        
+      </tr>
+     
+      <% @comments.each do |comment| %>
+        <tr>
+          <td><%= comment.commenter %></td>
+          <td><%= comment.body %></td>
+         
+        
+        </tr>
+      <% end %>
+    </table></tr>
+
+errors route
+
+      <% if @errors %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@post.errors.count, "error") %> prohibited
+        this post from being saved:
+      </h2>
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+   <p>
+    <%= f.label :bid %><br>
+    <%= f.number_field (:bid), class:"form-control" %>
+  </p>

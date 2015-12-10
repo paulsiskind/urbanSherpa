@@ -6,18 +6,19 @@
         <th colspan="1"></th>
       </tr>
      
-    
+       <% @post.comments.each do |comment| %>
         <tr>
           <td><%= comment.commenter %></td>
           <td><%= comment.body %></td>
           <td>
-           <%= link_to 'Destroy Comment',  [comment.post, comment],
+           <%= link_to 'Delete Comment',  [comment.post, comment],
                class: "btn btn-danger",
               
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
         </td>
-      
+        <% end %>
+        
    </table>
 
 

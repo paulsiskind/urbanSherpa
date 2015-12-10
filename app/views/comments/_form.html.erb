@@ -1,12 +1,14 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
+
   <p>
     <%= f.label :commenter %><br>
-    <%= f.text_area :commenter, :size => "100x2" %>
+    <%= f.text_area :commenter, class:"form-control" %>
   </p>
   <p>
     <%= f.label :body %><br>
-    <%= f.text_area :body, :size => "100x8" %>
+    <%= f.text_area :body, class:"form-control" %>
   </p>
+ 
   <p>
     <%= f.submit "Submit Message", class: "btn btn-success" %>
   </p>
