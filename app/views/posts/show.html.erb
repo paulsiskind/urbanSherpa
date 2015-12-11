@@ -3,6 +3,9 @@
   <br>
   <h1 class="text-center">Your Future Add!</h1>
   <div class="jumbotron show">
+    <p>Author:
+      <%= @post.user.name %>
+      <%= gravatar_for @post.user %>
     <h2>
       <strong>Title:</strong>
       <%= @post.title %>
