@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+
+
   def index
     @posts = Post.all
   end
@@ -14,9 +16,15 @@ def edit
 end
  
 def create
+  puts "------------------*****______________*********____________________"
+  puts current_user.name
   @post = Post.new(post_params)
+  @post.user_id = current_user.id
  
+ 
+  
   if @post.save
+    puts @post.inspect
     redirect_to @post
   else
     render 'new'
