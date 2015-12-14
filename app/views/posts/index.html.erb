@@ -15,12 +15,17 @@
           <td><%= post.title %></td>
           <td><%= post.text %></td>
           <td><%= link_to 'Show', post_path(post),class:'btn btn-info' %></td>
-          <td><%= link_to 'Edit', edit_post_path(post), class:'btn btn-warning' %></td>
-          <td><%= link_to 'Delete', post_path(post), class: 'btn btn-danger',
+          <% if logged_in? %>
+
+            <td><%= link_to 'Edit', edit_post_path(post), class:'btn btn-warning' %></td>
+            <td><%= link_to 'Delete', post_path(post), class: 'btn btn-danger',
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
+          <% end %>    
         </tr>
       <% end %>
     </table>
+    <% if logged_in? %>
     <%= link_to 'New Post', new_post_path %>
+    <% end %>
 </div>

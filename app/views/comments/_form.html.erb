@@ -1,6 +1,6 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
 
-
+  
   <p>
     <%= f.label :Comment %><br>
     <%= f.text_area :body, class:"form-control" %>
@@ -9,4 +9,5 @@
   <p>
     <%= f.submit "Submit Message", class: "btn btn-success" %>
   </p>
+
 <% end %>
