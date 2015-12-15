@@ -11,6 +11,7 @@ gem 'bootstrap-will_paginate', '0.0.10'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
+gem 'bootstrap-glyphicons', '~> 0.0.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

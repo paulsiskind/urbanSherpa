@@ -31,6 +31,6 @@
       <% end %>
     </table>
     <% if logged_in? %>
-    <%= link_to 'New Post', new_post_path %>
+    <%= link_to "<span class=\"glyphicon glyphicon-pencil\"></span>".html_safe, new_post_path %>
     <% end %>
 </div>
