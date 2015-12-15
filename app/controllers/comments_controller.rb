@@ -4,20 +4,13 @@ class CommentsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    puts "----------------------------------------"
-    puts current_user.name
-    #@comment = @post.comments.create( comment_params)
+    
     @comment = @post.comments.create( comment_params.merge({user_id: current_user.id}) )
-    puts "---------------------------"
-    #@comment.user_id = current_user.id
+    
 
     puts @comment.inspect
     redirect_to post_path(@post)
   end
-
-  # def show
-  #   @comment = Comment.find(params[:id])
-  # end
 
   def destroy
     @post = Post.find(params[:post_id])

@@ -23,13 +23,12 @@
  
   <div class="new">
     <% if logged_in? %>
-    <h4>Add a comment:</h4>
 
     <%= render 'comments/form' %>
     <% end %>
    
     <% if logged_in? %>
-      <%= link_to "<span class=\"glyphicon glyphicon-edit\"></span>".html_safe, edit_post_path(@post)  %> |
+      <%= link_to "<span class=\"glyphicon glyphicon-edit\"></span>".html_safe, edit_post_path(@post)  %> 
 
     <% end %>  
     <%= link_to "<span class=\"glyphicon glyphicon-circle-arrow-left\"></span>".html_safe, posts_path %>

@@ -16,8 +16,6 @@ def edit
 end
  
 def create
-  puts "------------------*****______________*********____________________"
-  puts current_user.name
   @post = Post.new(post_params)
   @post.user_id = current_user.id
  
