@@ -23,6 +23,9 @@
             <td><%= link_to 'Delete', post_path(post), class: 'btn btn-danger',
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
+          <% else %>
+            <td></td>
+            <td></td>
           <% end %>    
         </tr>
       <% end %>

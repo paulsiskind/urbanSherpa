@@ -7,7 +7,7 @@ class CommentsController < ApplicationController
     puts "----------------------------------------"
     puts current_user.name
     #@comment = @post.comments.create( comment_params)
-    @comment = @post.comments.create( comment_params ) )
+    @comment = @post.comments.create( comment_params.merge({user_id: current_user.id}) )
     puts "---------------------------"
     #@comment.user_id = current_user.id
 

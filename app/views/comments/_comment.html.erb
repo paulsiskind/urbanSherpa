@@ -14,12 +14,13 @@
           <td><%= comment.body %></td>
 
           <td>
+          <div class="explosion">
           <% if logged_in? and comment.user_id == current_user.id%>
-           <%= link_to 'Delete Comment',  [comment.post, comment],
-               class: "btn btn-danger",
+           <%= link_to image_tag("http://vignette2.wikia.nocookie.net/uncyclopedia/images/6/63/Nuclear_explosion_ar.jpg/revision/latest?cb=20061208030835"),  [comment.post, comment],
+               
               
                method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+               data: { confirm: 'Are you sure?' } %></div>
           </td>
           <% end %>
           <% end %>
