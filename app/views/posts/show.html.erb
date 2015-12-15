@@ -3,6 +3,7 @@
   <br>
   <h1 class="text-center">Your Future Add!</h1>
   <div class="jumbotron show">
+
     <p>Author:
       <%= @post.user.name %>
       <%= gravatar_for @post.user %>
@@ -17,7 +18,7 @@
     </h4>
   </div>
 
-    <h2>Comments</h2>
+    
     <%= render 'comments/comment' %>
  
   <div class="new">
