@@ -40,8 +40,11 @@ def update
   end
 end
 def destroy
+    
+
     @post = Post.find(params[:id])
-    @post.destroy
+    @post.destroy if current_user.id === @post.user_id
+    
  
     redirect_to posts_path
   end

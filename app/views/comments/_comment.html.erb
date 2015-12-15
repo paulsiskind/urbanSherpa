@@ -8,10 +8,11 @@
      
        <% @post.comments.each do |comment| %>
         <tr>
-          <td><%= comment.commenter %></td>
+          <td><%= comment.user.name %></td>
           <td><%= comment.body %></td>
-          <% if logged_in? %>
+
           <td>
+          <% if logged_in? and comment.user_id == current_user.id%>
            <%= link_to 'Delete Comment',  [comment.post, comment],
                class: "btn btn-danger",
               

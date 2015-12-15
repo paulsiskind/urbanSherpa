@@ -15,7 +15,7 @@
           <td><%= post.title %></td>
           <td><%= post.text %></td>
           <td><%= link_to 'Show', post_path(post),class:'btn btn-info' %></td>
-          <% if logged_in? %>
+          <% if logged_in? and post.user_id == current_user.id %>
 
             <td><%= link_to 'Edit', edit_post_path(post), class:'btn btn-warning' %></td>
             <td><%= link_to 'Delete', post_path(post), class: 'btn btn-danger',
