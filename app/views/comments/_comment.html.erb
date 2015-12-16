@@ -10,7 +10,8 @@
      
        <% @post.comments.each do |comment| %>
         <tr>
-          <td><%= comment.user.name %></td>
+          <td><%= comment.user.name %>
+              <%= gravatar_for comment.user %></td>
           <td><%= comment.body %></td>
 
           <td>
